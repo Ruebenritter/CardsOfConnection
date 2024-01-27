@@ -49,6 +49,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("You Win");
             //SceneManager.LoadScene("YouWin");
         }
+
+        if(progressBars.TimerHasRunOut()){
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     private void InitGame(){

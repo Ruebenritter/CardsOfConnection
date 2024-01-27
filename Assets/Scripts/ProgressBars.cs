@@ -6,21 +6,27 @@ using UnityEngine.UI;
 public class ProgressBars : MonoBehaviour
 {
     public GameObject opponent;
-    private bool attractionLevelfade;
 
     public GameObject attractionBar;
+    public GameObject stressBar;
     
     private Scrollbar attractionBarLevel;
+    private Scrollbar stressBarLevel;
     private float attractionLevelNew;
     private float transitionSpeed;
+
+    public AudioSource timerunsout;
+
+
 
     public float attractionLevelToBarRation = 10;
    
     void Start()
     {
-        attractionLevelfade = false;
         attractionBarLevel = attractionBar.GetComponent<Scrollbar>();
+        stressBarLevel = stressBar.GetComponent<Scrollbar>();
         transitionSpeed = 0.01f;
+        stressBarLevel.size = 1.0f;
     }
 
    
@@ -38,7 +44,18 @@ public class ProgressBars : MonoBehaviour
         else if(attractionLevelNew < attractionBarLevel.size - transitionSpeed){
             attractionBarLevel.size -= transitionSpeed;
         }
+
+        stressBarLevel.size -= Time.deltaTime * 0.005f;
+        if(stressBarLevel.size < 0.15f){
+            if(!timerunsout.isPlaying){
+                timerunsout.Play();
+            }
+        }
         
+    }
+
+    public bool TimerHasRunOut(){
+        return stressBarLevel.size <= 0.01f;
     }
 
     public void SetAttractionBar(float attractionLevel){
