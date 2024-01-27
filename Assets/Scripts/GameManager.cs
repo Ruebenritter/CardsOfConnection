@@ -155,8 +155,8 @@ public class GameManager : MonoBehaviour
         Destroy(reply);
 
         promptGO.SetActive(true);
-        //wait for reaction animation to finish
-        StartCoroutine(WaitForReaction(card));
+        promptIndex++;
+        StartNextRound();
     }
 
     private ReplyModel GetReplyForScore(int score){
@@ -169,12 +169,6 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
-    IEnumerator WaitForReaction(AnswerCard card){
-        yield return new WaitForSeconds(3.0f);
-        //display reaction
-        promptIndex++;
-        StartNextRound();
-    }
 
     public void TrashCards(){
         //drop down the first 3 cards
