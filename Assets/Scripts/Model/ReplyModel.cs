@@ -3,13 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PromptModel
+public class ReplyModel 
 {
-
     public string content;
-    public List<AnswerModel> answers;
-    public List<ReplyModel> reactions;
-
-
-    
+    public int score;
 }

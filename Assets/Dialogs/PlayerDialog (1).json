@@ -1,7 +1,7 @@
 {
     "name": "dialog_diana",
-    "intro": "Um... are you going to say somethin?",
-    "prompts": [
+    "intro": "Um... you're so quiet... are you going to say something?",
+	"prompts": [
         {
             "content": "So... uh.... have you ___ lately?",
             "answers": [
@@ -48,7 +48,7 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "Oh, I did actually... how did you know?",
                     "score": 2
                 },
                 {
@@ -101,7 +101,7 @@
                     "score": -1
                 },
                 {
-                    "content": "the steady decline of traditional values",
+                    "content": "the steady decline of tradidional values",
                     "score": -1
                 },
                 {
@@ -115,23 +115,23 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think... ",
+                    "content": "Oh, you like it as well? What a coincidence!",
                     "score": "2"
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "Hehe, well who doesn't?",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "Um... not really.",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "N.. no way! I don't like it!",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking!",
+                    "content": "Of course not! Only a total sicko would say that!",
                     "score": -2
                 }
             ]
@@ -168,7 +168,7 @@
                     "score": -1
                 },
                 {
-                    "content": "the taste of antifreeze in my drinks",
+                    "content": "that time the police had to come and drag me out of here",
                     "score": -1
                 },
                 {
@@ -182,23 +182,23 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "It does, doesn't it? I really like it~ ",
                     "score": 2
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "That's a nice thought.",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "Uh... yeah... I guess...",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "M.. maybe you should keep that kind of thing to yourself?",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking",
+                    "content": "That didn't really happen to you... right?",
                     "score": -2
                 }
             ]
@@ -249,23 +249,23 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "That's so sweet of you to say... ",
                     "score": 2
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "aaaw~",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "If you say so...",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "Really, that's all you feel?",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking",
+                    "content": "I really didn't want to hear that...",
                     "score": -2
                 }
             ]
@@ -316,23 +316,23 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "Re.. really? I feel the same way...",
                     "score": 2
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "Oh, what a nice thing to say!",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "If you say so...",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "T.. That's not the right thing to say!",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking",
+                    "content": "You're disgusting! How could you?",
                     "score": -2
                 }
             ]
@@ -357,49 +357,49 @@
                     "score": 0
                 },
                 {
-                    "content": "",
+                    "content": "people... an actual person",
                     "score": 0
                 },
                 {
-                    "content": "",
+                    "content": "someone who showers regularly",
                     "score": 0
                 },
                 {
-                    "content": "",
+                    "content": "people with a special smell",
                     "score": -1
                 },
                 {
-                    "content": "terrible",
+                    "content": "borderline alcoholics",
                     "score": -1
                 },
                 {
-                    "content": "terrible",
+                    "content": "desperate, insecure people",
                     "score": -2
                 },
                 {
-                    "content": "terrible",
+                    "content": "a lizard person, clad in human skin",
                     "score": -2
                 }
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "R.. Really? You think I'm... kind?",
                     "score": 2
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "Aaaw, what a lovely compliment!",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "Yeah, that's a thing... I guess?",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "I... I'm not sure I like what you're saying?",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking",
+                    "content": "Just... what is wrong with you?!",
                     "score": -2
                 }
             ]
@@ -450,23 +450,23 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "Oh... I'm so glad you feel this way!",
                     "score": 2
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "Hehe, I guess it did...",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "Uh... You're welcome I guess?",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "... U-huh ...",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking",
+                    "content": "You're awful, why would you say that!?",
                     "score": -2
                 }
             ]
@@ -517,23 +517,23 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "A connection? I... I feel it too...",
                     "score": 2
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "I'm so glad you're honest with your feelings!",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "Uh... I'm not sure I follow...",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "Let's just... pretend you didn't say that",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking",
+                    "content": "You... you wouldn't actually do that... right?",
                     "score": -2
                 }
             ]
@@ -584,23 +584,23 @@
             ],
             "reactions": [
                 {
-                    "content": "Hehe, well let me think...",
+                    "content": "Oh... you're making me blush~",
                     "score": 2
                 },
                 {
-                    "content": "Yeah, something like that...",
+                    "content": "Oh sure, that sounds lovely!",
                     "score": 1
                 },
                 {
-                    "content": "Huh, what do you mean?",
+                    "content": "Eh... I'd rather just leave to be honest",
                     "score": 0
                 },
                 {
-                    "content": "Wh... what?",
+                    "content": "Ugh, you're so rude! Just the worst!",
                     "score": -1
                 },
                 {
-                    "content": "I really hope you're joking",
+                    "content": "That... that does it! You're a sick, sick person and I'm OUT!",
                     "score": -2
                 }
             ]

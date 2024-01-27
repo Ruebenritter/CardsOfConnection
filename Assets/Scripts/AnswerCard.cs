@@ -10,7 +10,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public string text;
     public int baddieValue;
 
-    //private Transform stackAnchor;
+    private GameObject stackAnchor;
     private Vector3 originalPosition;
     private Vector3 hoverPosition;
     private Vector3 originalScale;
@@ -26,12 +26,12 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     public AudioSource bubbleclickSound;
 
+
     // Start is called before the first frame update
     void Start()
     {
+        stackAnchor = GameObject.Find("StackAnchor");
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        //stackAnchor = GameObject.Find("StackAnchor").transform;
-        
         startPos = transform.position;
         startRot = transform.rotation;
         selectable = true;
@@ -114,6 +114,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public IEnumerator DrawFromStack(){
         var animationDuration = 2.0f;
         //Animate flip and flying from stack anchor to start position
+        selectable = true;
         
         
         LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeInOutQuart);
@@ -130,7 +131,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
         LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeInOutQuart);
 
         yield return new WaitForSeconds(animationDuration);
-        selectable = true;
+        selectable = false;
         isInHand = true;
     }
 
@@ -138,5 +139,6 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
         transform.position = stackAnchor.transform.position;
         LeanTween.rotateY(gameObject, 180, 0.0f);
         isInHand = false;
+        selectable = false;
     }
 }

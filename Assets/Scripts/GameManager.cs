@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 {
     public Opponent currentDate;
     public GameObject promptPrefab;
+
+    public GameObject replyPrefab;
     private GameObject promptGO;
     public GameObject answerPrefab;
     public ProgressBars progressBars;
@@ -53,6 +55,11 @@ public class GameManager : MonoBehaviour
         if(progressBars.TimerHasRunOut()){
             SceneManager.LoadScene("GameOver");
         }
+        if(promptIndex >= currentDialogScript.prompts.Count){
+            Debug.Log("End of dialog");
+            SceneManager.LoadScene("GameOver");
+        }
+
     }
 
     private void InitGame(){
@@ -118,7 +125,7 @@ public class GameManager : MonoBehaviour
     }
 
     //User input advances round
-    public void HandleCardClick(AnswerCard card){
+    public async void HandleCardClick(AnswerCard card){
         //hide though bubble
         thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
         card.SetSelectable(false);
@@ -132,8 +139,32 @@ public class GameManager : MonoBehaviour
         //progressBars.AddAttractoin((float)(card.baddieValue * 0.1));
         currentDate.attractionLevel += (float)(card.baddieValue);
         currentDate.AddToEmotion(card.baddieValue);
+
+        //hide promptGo
+        promptGO.SetActive(false);
+        
+        var reply = Instantiate(replyPrefab, promptAnchor.transform);
+        //move forward in view to z = -3 so its placed over the backgorund
+        reply.transform.position = new Vector3(reply.transform.position.x + 1, reply.transform.position.y + 1, -3);
+        var writer = reply.GetComponent<ReplyWriter>();
+        var replyModel = GetReplyForScore(card.baddieValue);
+        Debug.Log(replyModel.content);
+        var success = await writer.WriteReply(replyModel);
+        Destroy(reply);
+
+        promptGO.SetActive(true);
         //wait for reaction animation to finish
         StartCoroutine(WaitForReaction(card));
+    }
+
+    private ReplyModel GetReplyForScore(int score){
+        var replies = currentDialogScript.prompts[promptIndex].reactions;
+        foreach (var reply in replies){
+            if (reply.score == score){
+                return reply;
+            }
+        }
+        return null;
     }
 
     IEnumerator WaitForReaction(AnswerCard card){
