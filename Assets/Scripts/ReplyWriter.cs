@@ -16,7 +16,7 @@ public class ReplyWriter : MonoBehaviour
     private float timer;
     public float maxTimeToWaitInSeconds = 10.0f;
 
-    public float uptimeForReply = 4.0f;
+    public float uptimeForReply = 2.0f;
 
     private TaskCompletionSource<bool> tcs;
     // Start is called before the first frame update

@@ -8,7 +8,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 {
     private bool selectable; //disallow card selection when trashed or flipped over
     public string text;
-    public int baddieValue;
+    public int attractionChange;
 
     private GameObject stackAnchor;
     private Vector3 originalPosition;
@@ -51,7 +51,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     public void SetContent(string text, int baddieValue){
         this.text = text;
-        this.baddieValue = baddieValue;
+        this.attractionChange = baddieValue;
         var textMesh = GetComponentInChildren<TextMeshPro>();
         textMesh.text = text;
     }
@@ -111,13 +111,13 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     }
 
     public IEnumerator DrawFromStack(){
-        var animationDuration = 2.0f;
+        var animationDuration = 1.0f;
         //Animate flip and flying from stack anchor to start position
         selectable = true;
         
         
-        LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeInOutQuart);
-        LeanTween.rotateY(gameObject, 0, animationDuration).setEase(LeanTweenType.easeInOutQuart);
+        LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeOutCubic);
+        LeanTween.rotateY(gameObject, 0, animationDuration).setEase(LeanTweenType.easeOutElastic);
 
         yield return new WaitForSeconds(animationDuration);
         selectable = true;
@@ -125,9 +125,9 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     }
 
     public IEnumerator DrawHiddenFromStack(){
-        var animationDuration = 2.2f;
+        var animationDuration = 0.9f;
         //Animate flip and flying from stack anchor to start position
-        LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeInOutQuart);
+        LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeOutSine);
 
         yield return new WaitForSeconds(animationDuration);
         selectable = false;

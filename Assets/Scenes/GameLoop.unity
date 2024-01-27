@@ -795,6 +795,7 @@ MonoBehaviour:
   promptAnchor: {fileID: 307559834}
   handAnchor: {fileID: 1545427639}
   opponentAnchor: {fileID: 0}
+  reactionPrefab: {fileID: 3444170067978743688, guid: 4a08605e610c4d045adca66293e27096, type: 3}
   opponent: {fileID: 655539191}
 --- !u!4 &419276678
 Transform:
@@ -947,7 +948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &545651093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1061,6 +1062,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 8968464045114771450, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6422556045357425829, guid: 37424471d7faf4244ba889cbe6b92a90, type: 3}
     - target: {fileID: 8968464045114771450, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2853,11 +2858,11 @@ PrefabInstance:
       objectReference: {fileID: 1778887919}
     - target: {fileID: 4729047125002821548, guid: 7b4981e0e4e21b84eb68bf4a12e19f6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.94
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 4729047125002821548, guid: 7b4981e0e4e21b84eb68bf4a12e19f6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7
+      value: -3.38
       objectReference: {fileID: 0}
     - target: {fileID: 4729047125002821548, guid: 7b4981e0e4e21b84eb68bf4a12e19f6e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2891,6 +2896,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6804231902570153490, guid: 7b4981e0e4e21b84eb68bf4a12e19f6e, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8174494904758621729, guid: 7b4981e0e4e21b84eb68bf4a12e19f6e, type: 3}
       propertyPath: m_Color.b
       value: 0.17163086
@@ -2906,7 +2915,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7927241555969669777, guid: 7b4981e0e4e21b84eb68bf4a12e19f6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 7b4981e0e4e21b84eb68bf4a12e19f6e, type: 3}
 --- !u!1001 &6490163419989952862
 PrefabInstance:
