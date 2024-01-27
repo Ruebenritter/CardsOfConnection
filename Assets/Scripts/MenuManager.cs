@@ -10,6 +10,8 @@ public class MenuManager : MonoBehaviour
     public GameObject CreditsScreen;
     public GameObject LoseScreen;
     public GameObject WinScreen;
+
+    public AudioSource clickSound;
     
     void Start()
     {
@@ -28,18 +30,27 @@ public class MenuManager : MonoBehaviour
         
     }
 
+    public void StartGame(){
+        clickSound.Play();
+        
+        sceneChanger.ChangeScene("GameLoop");
+    }
+
     public void OpenCredits(){
+        clickSound.Play();
         StartScreen.SetActive(false);
         CreditsScreen.SetActive(true);
     }
 
     public void CloseCredits(){
+        clickSound.Play();
         StartScreen.SetActive(true);
         CreditsScreen.SetActive(false);
     }
 
 
     public void QuitGame(){
+        clickSound.Play();
         Application.Quit();
     }
 }
