@@ -7,7 +7,7 @@ public class PromptModel
 {
 
     public string content;
-    public List<AnswerModel> answerList;
+    public List<AnswerModel> answers;
 
 
     

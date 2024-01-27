@@ -6,27 +6,27 @@
             "answers": [
                 {
                     "content": "Shit yourself alot.",
-                    "funniness_score": -2,
+                    "score": -2,
                     "reply": "What the fuck?"
                 },
                 {
                     "content": "work construction.",
-                    "funniness_score": -1,
+                    "score": -1,
                     "reply": "What do you mean?"
                 },
                 {
                     "content": "like to wear clothes sometimes.",
-                    "funniness_score": 0,
+                    "score": 0,
                     "reply": "..."
                 },
                 {
                     "content": "must be a part-time model. Part time. Part model.",
-                    "funniness_score": 1,
+                    "score": 1,
                     "reply": "Yeah, i did model once but (opens up)"
                 },
                 {
                     "content": "Box in boxshape.",
-                    "funniness_score": 2,
+                    "score": 2,
                     "reply": "Omg, let me rip your clothes off."
                 }
             ]

@@ -6,7 +6,7 @@ using UnityEngine;
 public class AnswerModel
 {
     public string content;
-    public int baddieValue;
+    public int score;
 
-    
+    public string reply;
 }
