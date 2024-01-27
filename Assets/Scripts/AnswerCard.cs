@@ -20,7 +20,6 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     private Quaternion startRot;
     private bool isInHand = false;
     
-    public GameObject stackAnchor;
 
     private GameManager gameManager;
 

@@ -29,7 +29,10 @@ public class GameManager : MonoBehaviour
 
     public Opponent opponent;
 
-   
+   void Awake(){
+     progressBars = GameObject.Find("ProgressBars").GetComponent<ProgressBars>();
+   }
+
     void Start()
     {
         InitGame();
@@ -51,7 +54,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("You Win");
             //SceneManager.LoadScene("YouWin");
         }
-
         if(progressBars.TimerHasRunOut()){
             SceneManager.LoadScene("GameOver");
         }
@@ -64,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     private void InitGame(){
 //Get opponent selection
-        progressBars = GameObject.Find("ProgressBars").GetComponent<ProgressBars>();
+       
         currentDialogScript = LoadDialog(currentDate.dateDialog);
         thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
     }

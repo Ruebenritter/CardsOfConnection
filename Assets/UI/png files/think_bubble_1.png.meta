@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      think_bubble_1_0: 7896564781253691193
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
