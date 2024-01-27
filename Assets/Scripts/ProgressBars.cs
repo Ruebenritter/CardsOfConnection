@@ -67,4 +67,8 @@ public class ProgressBars : MonoBehaviour
         stressLevelNew = stressLevel;
         
     }
+
+    public void AddAttractoin(float attractionChange){
+        attractionLevelNew += attractionChange;
+    }
 }

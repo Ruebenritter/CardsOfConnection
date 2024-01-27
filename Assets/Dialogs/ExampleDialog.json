@@ -30,6 +30,36 @@
                     "reply": "Omg, let me rip your clothes off."
                 }
             ]
+        },
+        {
+            "content": "What's your favorite thing to do? I really like ___!",
+            "answers":[
+                {
+                    "content": "Bathe in the blood of the infidels",
+                    "score": -2,
+                    "reply": "..."
+                },
+                {
+                    "content": "Play video games",
+                    "score": -1,
+                    "reply": "Omg i hope you're not a league player."
+                },
+                {
+                    "content": "Go to the gym",
+                    "score": 0,
+                    "reply": "I can tell."
+                },
+                {
+                    "content": "Go to the beach",
+                    "score": 1,
+                    "reply": "I love the beach."
+                },
+                {
+                    "content": "Go to the beach and do drugs",
+                    "score": 2,
+                    "reply": "I love the beach and drugs."
+                }
+            ]
         }
     ]
 }
