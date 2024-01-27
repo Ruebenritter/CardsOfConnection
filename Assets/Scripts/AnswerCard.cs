@@ -22,6 +22,8 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     private GameManager gameManager;
 
+    public AudioSource bubbleclickSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +74,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     public void OnPointerClick (PointerEventData eventData) {
         if (selectable){
+            bubbleclickSound.Play();
             gameManager.HandleCardClick(this);
         }
     }

@@ -7,6 +7,8 @@ public class MenuManagerGame : MonoBehaviour
     public GameObject PauseScreen;
     public bool gamePaused;
 
+    public AudioSource clickSound;
+
     void Start()
     {
         PauseScreen.SetActive(false);
@@ -18,10 +20,12 @@ public class MenuManagerGame : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape)){
             if(!gamePaused){
+                clickSound.Play();
                 PauseScreen.SetActive(true);
                 gamePaused = true;
             }
             else{
+                clickSound.Play();
                 PauseScreen.SetActive(false);
                 gamePaused = false;
             }
@@ -30,6 +34,7 @@ public class MenuManagerGame : MonoBehaviour
     }
 
     public void ContinueGame(){
+        clickSound.Play();
         PauseScreen.SetActive(false);
         gamePaused = false;
     }
