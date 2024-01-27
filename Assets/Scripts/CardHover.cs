@@ -1,7 +1,8 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class CardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     private Vector3 originalPosition;
     private Vector3 hoverPosition;
@@ -32,5 +33,12 @@ public class CardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         LeanTween.move(gameObject, originalPosition, hoverDuration).setEase(LeanTweenType.easeOutQuad);
         LeanTween.scale(gameObject, originalScale, hoverDuration).setEase(LeanTweenType.easeOutQuad);
     }
+
+    // Handle click on element
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        // Do something
+        print("Clicked!");
+    }   
 }
 
