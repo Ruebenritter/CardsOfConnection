@@ -6,6 +6,7 @@ using TMPro;
 using System.Threading;
 using System;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
     
     private int promptIndex = 0;
     private DialogModel currentDialogScript;
-
+    public GameObject reactionPrefab;
     public Opponent opponent;
 
    void Awake(){
@@ -127,29 +128,45 @@ public class GameManager : MonoBehaviour
     }
 
     //User input advances round
-    public async void HandleCardClick(AnswerCard card){
-        //hide though bubble
+    public async Task HandleCardClick(AnswerCard card)
+    {
+        // hide thought bubble
         thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
         card.SetSelectable(false);
         // dropdown all other cards
         var handCards = handAnchor.GetComponentsInChildren<AnswerCard>();
-        foreach (var handCard in handCards){
-            if (handCard != card){
+        foreach (var handCard in handCards)
+        {
+            if (handCard != card)
+            {
                 handCard.DropDown();
             }
         }
-        //progressBars.AddAttractoin((float)(card.baddieValue * 0.1));
-        currentDate.attractionLevel += (float)(card.baddieValue);
-        currentDate.AddToEmotion(card.baddieValue);
+        // progressBars.AddAttractoin((float)(card.baddieValue * 0.1));
+        currentDate.attractionLevel += (float)(card.attractionChange);
+        currentDate.AddToEmotion(card.attractionChange);
 
-        //hide promptGo
+        if (card.attractionChange == 2)
+        {
+            // play positive reaction coroutine
+            var positiveReactionTask = PositiveReaction();
+            await positiveReactionTask;
+        }
+        else if (card.attractionChange == -2)
+        {
+            // play negative reaction coroutine
+            var negativeReactionTask = NegativeReaction();
+            await negativeReactionTask;
+        }
+
+        // hide promptGo
         promptGO.SetActive(false);
-        
+
         var reply = Instantiate(replyPrefab, promptAnchor.transform);
-        //move forward in view to z = -3 so its placed over the backgorund
+        // move forward in view to z = -3 so it's placed over the background
         reply.transform.position = new Vector3(reply.transform.position.x + 1, reply.transform.position.y + 1, -3);
         var writer = reply.GetComponent<ReplyWriter>();
-        var replyModel = GetReplyForScore(card.baddieValue);
+        var replyModel = GetReplyForScore(card.attractionChange);
         Debug.Log(replyModel.content);
         var success = await writer.WriteReply(replyModel);
         Destroy(reply);
@@ -169,7 +186,22 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
+    private async Task PositiveReaction()
+    {
+        var reaction = Instantiate(reactionPrefab, transform);
+        var reactionClass = reaction.GetComponent<Reaction>();
+        reactionClass.SetPositiveReaction();
+        await Task.Delay(2000);
+        Destroy(reaction);
+    }
 
+    private async Task NegativeReaction(){
+        var reaction = Instantiate(reactionPrefab, transform);
+        var reactionClass = reaction.GetComponent<Reaction>();
+        reactionClass.SetNegativeReaction();
+        await Task.Delay(2000);
+        Destroy(reaction);
+    }
     public void TrashCards(){
         //drop down the first 3 cards
         var handCards = handAnchor.GetComponentsInChildren<AnswerCard>();

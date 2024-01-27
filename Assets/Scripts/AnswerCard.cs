@@ -8,7 +8,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 {
     private bool selectable; //disallow card selection when trashed or flipped over
     public string text;
-    public int baddieValue;
+    public int attractionChange;
 
     private GameObject stackAnchor;
     private Vector3 originalPosition;
@@ -51,7 +51,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     public void SetContent(string text, int baddieValue){
         this.text = text;
-        this.baddieValue = baddieValue;
+        this.attractionChange = baddieValue;
         var textMesh = GetComponentInChildren<TextMeshPro>();
         textMesh.text = text;
     }
