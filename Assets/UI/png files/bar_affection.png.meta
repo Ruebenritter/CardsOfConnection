@@ -129,10 +129,10 @@ TextureImporter:
       name: bar_affection_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 36
-        width: 423
-        height: 92
+        x: 0
+        y: 0
+        width: 456
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c882a3e3b38d2d841bc969e661fe1d89
     internalID: 0
     vertices: []
     indices: 
