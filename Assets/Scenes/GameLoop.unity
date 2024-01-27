@@ -897,7 +897,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9043122050817575287, guid: 4dfbce8d374580f4ba5d4e9b708d054e, type: 3}
   m_PrefabInstance: {fileID: 1451314980149344041}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 807188140}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2b28b71b12e1034393682d9ed9021a0, type: 3}
@@ -1082,6 +1082,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778134431}
   m_CullTransparentMesh: 1
+--- !u!1 &807188140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3505449017982860244, guid: 4dfbce8d374580f4ba5d4e9b708d054e, type: 3}
+  m_PrefabInstance: {fileID: 1451314980149344041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &916850903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2414,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Opponent
       objectReference: {fileID: 0}
+    - target: {fileID: 9043122050817575287, guid: 4dfbce8d374580f4ba5d4e9b708d054e, type: 3}
+      propertyPath: dateDialog
+      value: 
+      objectReference: {fileID: 4900000, guid: d7acbd2afc7e9564fa4335aed385ea8d, type: 3}
+    - target: {fileID: 9043122050817575287, guid: 4dfbce8d374580f4ba5d4e9b708d054e, type: 3}
+      propertyPath: attractionLevelMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043122050817575287, guid: 4dfbce8d374580f4ba5d4e9b708d054e, type: 3}
+      propertyPath: baseAttractionLevel
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2502,6 +2519,14 @@ PrefabInstance:
     - target: {fileID: 3586462093762650017, guid: 23f7b632985adfc428ca7735bd4c477f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 171
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662443264843284470, guid: 23f7b632985adfc428ca7735bd4c477f, type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 807188140}
+    - target: {fileID: 3662443264843284470, guid: 23f7b632985adfc428ca7735bd4c477f, type: 3}
+      propertyPath: stressBar
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3729417315773744692, guid: 23f7b632985adfc428ca7735bd4c477f, type: 3}
       propertyPath: m_Name
@@ -2656,7 +2681,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5704043041271270917, guid: 23f7b632985adfc428ca7735bd4c477f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f7b632985adfc428ca7735bd4c477f, type: 3}

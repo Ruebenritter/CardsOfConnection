@@ -5,29 +5,21 @@ using UnityEngine.UI;
 
 public class ProgressBars : MonoBehaviour
 {
+    public GameObject opponent;
     private bool attractionLevelfade;
-    private bool stressLevelfade;
 
-    public GameObject stressBar;
     public GameObject attractionBar;
     
-    private Scrollbar stressBarLevel;
     private Scrollbar attractionBarLevel;
-
-    private float stressLevelNew;
     private float attractionLevelNew;
     private float transitionSpeed;
+
+    public float attractionLevelToBarRation = 10;
    
     void Start()
     {
         attractionLevelfade = false;
-        stressLevelfade = false;
-        stressBarLevel = stressBar.GetComponent<Scrollbar>();
         attractionBarLevel = attractionBar.GetComponent<Scrollbar>();
-        
-        SetAttractionBar(0.1f);
-        SetStressBar(0.1f);
-
         transitionSpeed = 0.01f;
 
     }
@@ -37,21 +29,15 @@ public class ProgressBars : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space)){
             SetAttractionBar(Random.Range(0.0f,1.0f));
-            SetStressBar(Random.Range(0.0f,1.0f));
         }
+
+        attractionLevelNew = opponent.GetComponent<Opponent>().GetAttractionLevel() / attractionLevelToBarRation;
 
         if(attractionLevelNew > attractionBarLevel.size + transitionSpeed){
             attractionBarLevel.size += transitionSpeed;
         }
         else if(attractionLevelNew < attractionBarLevel.size - transitionSpeed){
             attractionBarLevel.size -= transitionSpeed;
-        }
-
-        if(stressLevelNew > stressBarLevel.size + transitionSpeed){
-            stressBarLevel.size += transitionSpeed;
-        }
-        else if(stressLevelNew < stressBarLevel.size - transitionSpeed){
-            stressBarLevel.size -= transitionSpeed;
         }
         
     }
@@ -62,11 +48,6 @@ public class ProgressBars : MonoBehaviour
             attractionLevelNew = attractionLevel;
     }
 
-    public void SetStressBar(float stressLevel){
-        //stressBarLevel.size = stressLevel;
-        stressLevelNew = stressLevel;
-        
-    }
 
     public void AddAttractoin(float attractionChange){
         attractionLevelNew += attractionChange;

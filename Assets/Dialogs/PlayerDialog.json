@@ -1,0 +1,609 @@
+{
+    "name": "dialog_diana",
+    "intro": "Um... are you going to say somethin?",
+    "prompts": [
+        {
+            "content": "So... uh.... have you ___ lately?",
+            "answers": [
+                {
+                    "content": "taken any pleasant walks",
+                    "score": 2
+                },
+                {
+                    "content": "been on any nice vacations",
+                    "score": 2
+                },
+                {
+                    "content": "seen any good movies",
+                    "score": 1
+                },
+                {
+                    "content": "read any good books",
+                    "score": 1
+                },
+                {
+                    "content": "been outside",
+                    "score": 0
+                },
+                {
+                    "content": "washed the dishes",
+                    "score": 0
+                },
+                {
+                    "content": "taken any foot pix",
+                    "score": -1
+                },
+                {
+                    "content": "checked out my onlyfans",
+                    "score": -1
+                },
+                {
+                    "content": "seen any good hardcore tapes",
+                    "score": -2
+                },
+                {
+                    "content": "been to any orgies",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking... right?",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "Are you as fascinated by ___ as I am?",
+            "answers": [
+                {
+                    "content": "the full moon on a starry night",
+                    "score": 2
+                },
+                {
+                    "content": "the song of birds in the park",
+                    "score": 2
+                },
+                {
+                    "content": "romantic poetry",
+                    "score": 1
+                },
+                {
+                    "content": "penguins",
+                    "score": 1
+                },
+                {
+                    "content": "foreign politics",
+                    "score": 0
+                },
+                {
+                    "content": "stamp collecting",
+                    "score": 0
+                },
+                {
+                    "content": "taxidermy",
+                    "score": -1
+                },
+                {
+                    "content": "the steady decline of traditional values",
+                    "score": -1
+                },
+                {
+                    "content": "dead bodies",
+                    "score": -2
+                },
+                {
+                    "content": "nazi memorabilia",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think... ",
+                    "score": "2"
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking!",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "I really like this place... always reminds me of ___",
+            "answers": [
+                {
+                    "content": "being on vacation in venice",
+                    "score": 2
+                },
+                {
+                    "content": "a ghibli movie",
+                    "score": 2
+                },
+                {
+                    "content": "happy times",
+                    "score": 1
+                },
+                {
+                    "content": "my old hometown",
+                    "score": 1
+                },
+                {
+                    "content": "the weather",
+                    "score": 0
+                },
+                {
+                    "content": "eeh... coffee",
+                    "score": 0
+                },
+                {
+                    "content": "my ex",
+                    "score": -1
+                },
+                {
+                    "content": "the taste of antifreeze in my drinks",
+                    "score": -1
+                },
+                {
+                    "content": "getting black-out drunk",
+                    "score": -2
+                },
+                {
+                    "content": "the teeth I lost here",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "Looking at you makes me feel ___ ?",
+            "answers": [
+                {
+                    "content": "like this is where I'm meant to be",
+                    "score": 2
+                },
+                {
+                    "content": "like there's a spark between us",
+                    "score": 2
+                },
+                {
+                    "content": "warm inside",
+                    "score": 1
+                },
+                {
+                    "content": "all fuzzy",
+                    "score": 1
+                },
+                {
+                    "content": "hungry",
+                    "score": 0
+                },
+                {
+                    "content": "I need a shave",
+                    "score": 0
+                },
+                {
+                    "content": "constipated",
+                    "score": -1
+                },
+                {
+                    "content": "desperate",
+                    "score": -1
+                },
+                {
+                    "content": "all funny in my pants",
+                    "score": -2
+                },
+                {
+                    "content": "like stealing a cop's gun",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "When I'm with you I can hardly ___.",
+            "answers": [
+                {
+                    "content": "keep my heart still",
+                    "score": 2
+                },
+                {
+                    "content": "take my eyes off you",
+                    "score": 2
+                },
+                {
+                    "content": "think of anything else",
+                    "score": 1
+                },
+                {
+                    "content": "find the right words",
+                    "score": 1
+                },
+                {
+                    "content": "keep focused",
+                    "score": 0
+                },
+                {
+                    "content": "stay awake",
+                    "score": 0
+                },
+                {
+                    "content": "wait to go home",
+                    "score": -1
+                },
+                {
+                    "content": "hear the screams in my head anymore",
+                    "score": -1
+                },
+                {
+                    "content": "hold my pee in",
+                    "score": -2
+                },
+                {
+                    "content": "control my bowels",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "You know, I really like ___, just like you",
+            "answers": [
+                {
+                    "content": "someone with a kind heart",
+                    "score": 2
+                },
+                {
+                    "content": "someone cute",
+                    "score": 1
+                },
+                {
+                    "content": "a good looking person",
+                    "score": 1
+                },
+                {
+                    "content": "a fellow member of the human race",
+                    "score": 0
+                },
+                {
+                    "content": "",
+                    "score": 0
+                },
+                {
+                    "content": "",
+                    "score": 0
+                },
+                {
+                    "content": "",
+                    "score": -1
+                },
+                {
+                    "content": "terrible",
+                    "score": -1
+                },
+                {
+                    "content": "terrible",
+                    "score": -2
+                },
+                {
+                    "content": "terrible",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "This evening with you... it felt ___",
+            "answers": [
+                {
+                    "content": "like I'm having the most plesant dream",
+                    "score": 2
+                },
+                {
+                    "content": "special",
+                    "score": 1
+                },
+                {
+                    "content": "nice",
+                    "score": 1
+                },
+                {
+                    "content": "servicable",
+                    "score": 0
+                },
+                {
+                    "content": "adequate",
+                    "score": 0
+                },
+                {
+                    "content": "pretty okay",
+                    "score": 0
+                },
+                {
+                    "content": "almost as good as watching the history channel",
+                    "score": -1
+                },
+                {
+                    "content": "almost as good as my last date",
+                    "score": -1
+                },
+                {
+                    "content": "like my skeleton wants to leave my body",
+                    "score": -2
+                },
+                {
+                    "content": "like being a puppy in a blender",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "You know, I can really feel a connection, like ___",
+            "answers": [
+                {
+                    "content": "we're made for each other",
+                    "score": 2
+                },
+                {
+                    "content": "I've found someone special",
+                    "score": 1
+                },
+                {
+                    "content": "there's something between us",
+                    "score": 1
+                },
+                {
+                    "content": "two legos stuck together",
+                    "score": 0
+                },
+                {
+                    "content": "a pair of matching socks",
+                    "score": 0
+                },
+                {
+                    "content": "poverty and crime rates",
+                    "score": -1
+                },
+                {
+                    "content": "fat man and little boy",
+                    "score": -1
+                },
+                {
+                    "content": "handcuffs and cheese",
+                    "score": -1
+                },
+                {
+                    "content": "my dick in an electrical outlet",
+                    "score": -2
+                },
+                {
+                    "content": "bleach and vinegar",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking",
+                    "score": -2
+                }
+            ]
+        },
+        {
+            "content": "What do you say, how about ___ ?",
+            "answers": [
+                {
+                    "content": "we go somewhere a little more... romantic",
+                    "score": 2
+                },
+                {
+                    "content": "we do this again some time",
+                    "score": 1
+                },
+                {
+                    "content": "we order some dessert",
+                    "score": 1
+                },
+                {
+                    "content": "ask for the bill",
+                    "score": 0
+                },
+                {
+                    "content": "we discuss foreign politics",
+                    "score": 0
+                },
+                {
+                    "content": "you leave so I can keep drinking",
+                    "score": -1
+                },
+                {
+                    "content": "you pay our drinks now",
+                    "score": -1
+                },
+                {
+                    "content": "we join a cult together",
+                    "score": -2
+                },
+                {
+                    "content": "we burn this damn place to the ground",
+                    "score": -2
+                },
+                {
+                    "content": "we instigate a riot",
+                    "score": -2
+                }
+            ],
+            "reactions": [
+                {
+                    "content": "Hehe, well let me think...",
+                    "score": 2
+                },
+                {
+                    "content": "Yeah, something like that...",
+                    "score": 1
+                },
+                {
+                    "content": "Huh, what do you mean?",
+                    "score": 0
+                },
+                {
+                    "content": "Wh... what?",
+                    "score": -1
+                },
+                {
+                    "content": "I really hope you're joking",
+                    "score": -2
+                }
+            ]
+        }
+    ]
+}

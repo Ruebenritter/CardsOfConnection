@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameLoop.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: bb6269c0c0701cd4392a87d131a0d881
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

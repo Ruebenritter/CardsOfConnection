@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class Opponent : MonoBehaviour
@@ -8,38 +9,49 @@ public class Opponent : MonoBehaviour
     //public Sprite basePortrait;
     private Animator animator;
     public float attractionLevel;
-    public float stressLevel;
+    public float attractionLevelMax;
+    public float attractionLevelMin;
+    public float baseAttractionLevel;
+    
 
     public TextAsset dateDialog;
 
 
     private List<string> emotions = new List<string> {"very bad", "bad", "neutral", "good", "very good"};
     public List<Prompt> dialogueSequence = new List<Prompt> {};
-    private float currentEmotion;
     
     void Start()
     {
         animator = GetComponent<Animator>();
-        attractionLevel = 0.0f;
-        stressLevel = 0.0f;
-        currentEmotion = 0.1f;
+        attractionLevel = baseAttractionLevel;
+       
+    }
+
+    public float GetAttractionLevel(){
+        return attractionLevel;
+    }
+
+    void Update()
+    {
 
         
     }
 
-    
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Return)){
-            animator.SetFloat("CurrentEmotion",currentEmotion);
-            if(currentEmotion<9.0f){
-                currentEmotion += 2;
-            }
-            else{
-                currentEmotion = 0.1f;
-            }
+    public bool AttractionFailed(){
+        if(attractionLevel <= attractionLevelMin){
+            return true;
         }
+        else{
+            return false;
+        }
+    }
 
-        
+    public bool AttractionSucceeded(){
+        if(attractionLevel >= attractionLevelMax){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
