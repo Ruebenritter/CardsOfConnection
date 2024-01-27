@@ -526,6 +526,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: stackAnchor
+      value: 
+      objectReference: {fileID: 1288977706}
+    - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 
       objectReference: {fileID: 1951559487}
@@ -674,6 +678,7 @@ MonoBehaviour:
   promptAnchor: {fileID: 307559834}
   handAnchor: {fileID: 1545427639}
   opponentAnchor: {fileID: 0}
+  opponent: {fileID: 0}
 --- !u!4 &419276678
 Transform:
   m_ObjectHideFlags: 0
@@ -855,10 +860,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8913585362324171721, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968464045114771450, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968464045114771450, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968464045114771450, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8423023031694547076, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1414232160}
+    - targetCorrespondingSourceObject: {fileID: 8423023031694547076, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1414232161}
   m_SourcePrefab: {fileID: 100100000, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
 --- !u!1 &590449426
 GameObject:
@@ -927,6 +954,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: stackAnchor
+      value: 
+      objectReference: {fileID: 1288977706}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 
@@ -1119,7 +1150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &916850904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1252,6 +1283,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1778887919}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: stackAnchor
+      value: 
+      objectReference: {fileID: 1288977706}
+    - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 
       objectReference: {fileID: 1951559487}
@@ -1363,6 +1398,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: stackAnchor
+      value: 
+      objectReference: {fileID: 1288977706}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 
@@ -1900,6 +1939,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 704164672270913062, guid: 9865e2943ab30d6488a3062564fb087f, type: 3}
   m_PrefabInstance: {fileID: 1387612403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1414232157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8423023031694547076, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
+  m_PrefabInstance: {fileID: 571684534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &1414232160
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414232157}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: bc7ae92d62a9fb54e8d4ad66f6816b5b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: bc7ae92d62a9fb54e8d4ad66f6816b5b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!95 &1414232161
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414232157}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ca93348a6657bb4eac5068c36747b1e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1451087365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4935062818581605017, guid: 870ba0268adb0c54b9afd7f8d70bbcf2, type: 3}
@@ -2121,6 +2204,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: stackAnchor
+      value: 
+      objectReference: {fileID: 1288977706}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 

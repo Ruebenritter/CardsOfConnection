@@ -10,7 +10,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public string text;
     public int baddieValue;
 
-    private Transform stackAnchor;
+    //private Transform stackAnchor;
     private Vector3 originalPosition;
     private Vector3 hoverPosition;
     private Vector3 originalScale;
@@ -19,6 +19,8 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     private Vector3 startPos;
     private Quaternion startRot;
     private bool isInHand = false;
+    
+    public GameObject stackAnchor;
 
     private GameManager gameManager;
 
@@ -28,7 +30,8 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        stackAnchor = GameObject.Find("StackAnchor").transform;
+        //stackAnchor = GameObject.Find("StackAnchor").transform;
+        
         startPos = transform.position;
         startRot = transform.rotation;
         selectable = true;
@@ -132,7 +135,7 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     }
 
     public void PlaceOnStack(){
-        transform.position = stackAnchor.position;
+        transform.position = stackAnchor.transform.position;
         LeanTween.rotateY(gameObject, 180, 0.0f);
         isInHand = false;
     }
