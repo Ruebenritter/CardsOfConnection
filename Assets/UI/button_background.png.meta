@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ad68e4c3d77cd845b762701fd7e36ea
+guid: df2b95e5370843844bf36bf22a64a652
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1111858780534316623
-    second: card_blue_back_0
+      213: -9048593517765135490
+    second: button_background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,19 +84,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: card_blue_back_0
+      name: button_background_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 120
-        height: 151
+        x: 0
+        y: 0
+        width: 350
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b16ad97452e190f0800000000000000
-      internalID: -1111858780534316623
+      spriteID: e73f4b81320fc6280800000000000000
+      internalID: -9048593517765135490
       vertices: []
       indices: 
       edges: []
@@ -156,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      card_blue_back_0: -1111858780534316623
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
