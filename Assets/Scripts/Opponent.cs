@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class Opponent : MonoBehaviour
@@ -7,48 +8,56 @@ public class Opponent : MonoBehaviour
 
     //public Sprite basePortrait;
     private Animator animator;
+    public float attractionLevel;
+    public float attractionLevelMax;
+    public float attractionLevelMin;
+    public float baseAttractionLevel;
+    
 
     public TextAsset dateDialog;
-    public float attractionLevel;
 
     private List<string> emotions = new List<string> {"very bad", "bad", "neutral", "good", "very good"};
     public List<Prompt> dialogueSequence = new List<Prompt> {};
-    private float currentEmotion;
-
-    public ProgressBars progressBars;
     
     void Start()
     {
         animator = GetComponent<Animator>();
-        attractionLevel = 5.0f;
-        progressBars.SetAttractionBar(attractionLevel/10);
-        setOpponentEmotion(attractionLevel);
+        attractionLevel = baseAttractionLevel;
+        SetOpponentEmotion(attractionLevel);
+        
     }
 
-    
+    public float GetAttractionLevel(){
+        return attractionLevel;
+    }
 
-    
-    
-    
-        /*
-        if(Input.GetKeyDown(KeyCode.Return)){
-            animator.SetFloat("CurrentEmotion",currentEmotion);
-            if(currentEmotion<9.0f){
-                currentEmotion += 2;
-            }
-            else{
-                currentEmotion = 0.1f;
-            }
-        }   
-        */
-    
+    void Update()
+    {
 
-        
-    public void addToEmotion(float delta){
+    }   
+    public void AddToEmotion(float delta){
         animator.SetFloat("CurrentEmotion",attractionLevel+delta);
     }
 
-    public void setOpponentEmotion(float emotionValue){
+    public void SetOpponentEmotion(float emotionValue){
         animator.SetFloat("CurrentEmotion",attractionLevel);
+    }
+
+    public bool AttractionFailed(){
+        if(attractionLevel <= attractionLevelMin){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public bool AttractionSucceeded(){
+        if(attractionLevel >= attractionLevelMax){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

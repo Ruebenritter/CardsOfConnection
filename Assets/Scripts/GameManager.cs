@@ -5,6 +5,7 @@ using System.IO;
 using TMPro;
 using System.Threading;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,6 +37,18 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void FixedUpdate(){
+        if(currentDate != null && currentDate.AttractionFailed()){
+            Debug.Log("Game Over");
+            SceneManager.LoadScene("GameOver");
+        }
+
+        if(currentDate != null && currentDate.AttractionSucceeded()){
+            Debug.Log("You Win");
+            //SceneManager.LoadScene("YouWin");
+        }
     }
 
     private void InitGame(){
@@ -112,8 +125,9 @@ public class GameManager : MonoBehaviour
                 handCard.DropDown();
             }
         }
-        progressBars.AddAttractoin((float)(card.baddieValue * 0.1));
-        opponent.addToEmotion(card.baddieValue);
+        //progressBars.AddAttractoin((float)(card.baddieValue * 0.1));
+        currentDate.attractionLevel += (float)(card.baddieValue);
+        currentDate.AddToEmotion(card.baddieValue);
         //wait for reaction animation to finish
         StartCoroutine(WaitForReaction(card));
     }
