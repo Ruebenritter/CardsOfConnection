@@ -1,55 +1,10 @@
 fileFormatVersion: 2
-guid: d38e7997a9301c94ba1c06737cd5e41f
+guid: 2153e65413eeeec47b719e196fd3ec02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4369572136041557648
-    second: title_0
-  - first:
-      213: 3918735734063839423
-    second: title_1
-  - first:
-      213: 8126443836680682420
-    second: title_2
-  - first:
-      213: -1799187036485144362
-    second: title_3
-  - first:
-      213: 6959973565247811803
-    second: title_4
-  - first:
-      213: 8208922059937784112
-    second: title_5
-  - first:
-      213: -4093714307795105667
-    second: title_6
-  - first:
-      213: -2490043832354904171
-    second: title_7
-  - first:
-      213: 2170485668361454577
-    second: title_8
-  - first:
-      213: -954477957450887664
-    second: title_9
-  - first:
-      213: 9077172329364265620
-    second: title_10
-  - first:
-      213: -3010302418198178162
-    second: title_11
-  - first:
-      213: 7104359310992645417
-    second: title_12
-  - first:
-      213: -8255546105219972060
-    second: title_13
-  - first:
-      213: -331151966480693520
-    second: title_14
-  - first:
-      213: -461413332273858376
-    second: title_15
+      213: -126741119733325084
+    second: pauseScreen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -158,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: title_0
+      name: pauseScreen_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 160
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fd625ef5872f6bc459fe0b3c2cabf3a8
-      internalID: 157502384
+      spriteID: 4e22cd38f99bd3ef0800000000000000
+      internalID: -126741119733325084
       vertices: []
       indices: 
       edges: []
@@ -181,15 +136,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 70d96db22f9379a41b8bca544e35becb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      title_0: 157502384
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

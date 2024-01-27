@@ -564,6 +564,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1803168101918910893, guid: 9865e2943ab30d6488a3062564fb087f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9048593517765135490, guid: df2b95e5370843844bf36bf22a64a652, type: 3}
     - target: {fileID: 2502087570473016642, guid: 9865e2943ab30d6488a3062564fb087f, type: 3}
       propertyPath: m_Name
       value: StartButton
@@ -761,7 +765,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 920272174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bef424423acd0b448198f9cb13dbdb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f492e17f7a7c8d4ebf940abf7ffbad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &920272176
@@ -960,7 +964,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -871147632, guid: 1009766d894aeec45b8bacbf3366c1b5, type: 3}
+  m_Sprite: {fileID: 157502384, guid: d38e7997a9301c94ba1c06737cd5e41f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1156,7 +1160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3560698593848636649, guid: 2c7215e157a095745936952371a83286, type: 3}
+  m_Sprite: {fileID: -3560698593848636649, guid: 25e001309100d20479546578e96f87cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1200,7 +1204,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1440746527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b50b90fdba59344f99c0ffa0d3f30af, type: 3}
+  m_Script: {fileID: 11500000, guid: 695db985cbec0734ebae19c64c28d939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneChanger: {fileID: 920272175}
