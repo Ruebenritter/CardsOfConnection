@@ -15,7 +15,7 @@ public class ProgressBars : MonoBehaviour
     private Scrollbar attractionBarLevel;
 
     private float stressLevelNew;
-    private float attractionLevelNew;
+    public float attractionLevelNew;
     private float transitionSpeed;
    
     void Start()
@@ -24,12 +24,11 @@ public class ProgressBars : MonoBehaviour
         stressLevelfade = false;
         stressBarLevel = stressBar.GetComponent<Scrollbar>();
         attractionBarLevel = attractionBar.GetComponent<Scrollbar>();
-        
+
         SetAttractionBar(0.1f);
         SetStressBar(0.1f);
 
         transitionSpeed = 0.01f;
-
     }
 
    
@@ -65,7 +64,6 @@ public class ProgressBars : MonoBehaviour
     public void SetStressBar(float stressLevel){
         //stressBarLevel.size = stressLevel;
         stressLevelNew = stressLevel;
-        
     }
 
     public void AddAttractoin(float attractionChange){

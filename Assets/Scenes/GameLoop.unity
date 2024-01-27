@@ -517,6 +517,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545427639}
     m_Modifications:
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 
@@ -911,6 +919,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545427639}
     m_Modifications:
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 
@@ -1218,6 +1234,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545427639}
     m_Modifications:
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: cLickSound
       value: 
@@ -1326,6 +1350,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545427639}
     m_Modifications:
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 
@@ -1658,6 +1690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f92004016aaf14394b3397ed8edf2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSound: {fileID: 1778887919}
 --- !u!61 &1384663164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2075,6 +2108,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545427639}
     m_Modifications:
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503906669042906385, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2531397361652902874, guid: 61a8c644518fd334b9b9945b8ba37950, type: 3}
       propertyPath: bubbleclickSound
       value: 

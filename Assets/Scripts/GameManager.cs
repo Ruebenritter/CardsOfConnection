@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     private int promptIndex = 0;
     private DialogModel currentDialogScript;
 
+    public Opponent opponent;
+
    
     void Start()
     {
@@ -111,6 +113,7 @@ public class GameManager : MonoBehaviour
             }
         }
         progressBars.AddAttractoin((float)(card.baddieValue * 0.1));
+        opponent.addToEmotion(card.baddieValue);
         //wait for reaction animation to finish
         StartCoroutine(WaitForReaction(card));
     }

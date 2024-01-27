@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 public class TrashButton : MonoBehaviour, IPointerClickHandler
 {
     private GameManager gameManager;
+    public AudioSource clickSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class TrashButton : MonoBehaviour, IPointerClickHandler
     }
 
     public void OnPointerClick (PointerEventData eventData) {
+        clickSound.Play();
         Debug.Log("TrashButton clicked");
         gameManager.TrashCards();
     }
