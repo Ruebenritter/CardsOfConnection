@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5513057571012139251}
   - component: {fileID: 2912855934134745013}
   - component: {fileID: 6294490533705581868}
+  - component: {fileID: 5202760399187171519}
   m_Layer: 0
   m_Name: DrawButton
   m_TagString: Untagged
@@ -93,6 +94,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.3987656, y: 1.1055667}
   m_EdgeRadius: 0
+--- !u!114 &5202760399187171519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487501286762979434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828a439a7fb1d00499d6e4b8c17ee21c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverScale: {x: 1.1, y: 1.1, z: 1}
 --- !u!1 &7674473570343659813
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,13 +132,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7674473570343659813}
-  m_LocalRotation: {x: -0, y: -0, z: 0.053101383, w: 0.99858916}
+  m_LocalRotation: {x: 0, y: 0, z: 0.056692794, w: 0.99839175}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5513057571012139251}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.088}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -203,8 +217,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292312371
-  m_fontColor: {r: 0.20164466, g: 0.49053013, b: 0.8415094, a: 1}
+    rgba: 4293781102
+  m_fontColor: {r: 0.43137255, g: 0.9019608, b: 0.92941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

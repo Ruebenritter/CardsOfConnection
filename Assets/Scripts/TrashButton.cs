@@ -13,8 +13,10 @@ public class TrashButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     public TMP_Text TrashInfoText;
     private Color TrashInfoTextColorTransp;
     private Color TrashInfoTextColorNormal;
+    public GameObject Backgr;
 
     public AudioSource clickSound;
+    public AudioSource trashBinSound;
 
 
 
@@ -28,7 +30,7 @@ public class TrashButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         TrashInfoText = TrashInfoText.GetComponent<TextMeshPro>();
         TrashInfoText.overrideColorTags = true;
-        TrashInfoTextColorNormal = new Color (0.019f,0.080f,0.065f,0.990f);
+        TrashInfoTextColorNormal = new Color (0.619f,0.713f,0.917f,0.990f);
         TrashInfoTextColorTransp = new Color (0.919f,0.980f,0.965f,0.000f);
     }
 
@@ -41,6 +43,7 @@ public class TrashButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     public void OnPointerEnter(PointerEventData eventData)
     {
         TrashInfoText.color = TrashInfoTextColorNormal;
+        Backgr.SetActive(true);
         Debug.Log("TrashButton entered!");
         //LeanTween.value(gameObject, updateValueExampleCallback, fadeoutcolor, color, 1f).setEase(LeanTweenType.easeOutElastic).setDelay(2f);
         
@@ -49,11 +52,12 @@ public class TrashButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     public void OnPointerExit(PointerEventData eventData)
     {
         TrashInfoText.color = TrashInfoTextColorTransp;
+        Backgr.SetActive(false);
         Debug.Log("TrashButton leaving!");
     }
 
     public void OnPointerClick (PointerEventData eventData) {
-        clickSound.Play();
+        trashBinSound.Play();
         Debug.Log("TrashButton clicked");
         StartCoroutine(BinOpening());
         gameManager.TrashCards();

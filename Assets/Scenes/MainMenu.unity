@@ -526,7 +526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 704164672270913062, guid: 9865e2943ab30d6488a3062564fb087f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 200
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 704164672270913062, guid: 9865e2943ab30d6488a3062564fb087f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1581,7 +1581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 704164672270913062, guid: 9865e2943ab30d6488a3062564fb087f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 704164672270913062, guid: 9865e2943ab30d6488a3062564fb087f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2103,7 +2103,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CARDS OF CONNECTION
+  m_Text: Just don't be weird, ok?
 --- !u!222 &1683926334
 CanvasRenderer:
   m_ObjectHideFlags: 0
