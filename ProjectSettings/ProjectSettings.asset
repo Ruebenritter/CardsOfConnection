@@ -40,10 +40,14 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos: []
+<<<<<<< Updated upstream
   m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 927e9dbb015b6471db9b379a57de8a2f, type: 3}
+=======
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: aaac437e8240227499543c187d399cf4, type: 3}
+>>>>>>> Stashed changes
   m_HolographicTrackingLossScreen: {fileID: 0}
-  defaultScreenWidth: 1280
-  defaultScreenHeight: 720
+  defaultScreenWidth: 1920
+  defaultScreenHeight: 1080
   defaultScreenWidthWeb: 1280
   defaultScreenHeightWeb: 720
   m_StereoRenderingPath: 0
