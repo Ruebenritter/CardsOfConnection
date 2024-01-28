@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GGJ24_Logo_0: 8834843579023113039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
