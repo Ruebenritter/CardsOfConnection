@@ -50,7 +50,7 @@ MonoBehaviour:
   attractionLevelMax: 0
   attractionLevelMin: 0
   baseAttractionLevel: 0
-  dateDialog: {fileID: 4900000, guid: 602b0814a6cb99b49a74f74416d5c725, type: 3}
+  dateDialog: {fileID: 4900000, guid: 1879b383ee9fc724b8a7f335b7c4e7ad, type: 3}
   dialogueSequence: []
 --- !u!212 &438929036259714880
 SpriteRenderer:
