@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour
     public AudioSource laugh;
     public AudioSource huh_x;
 
+    private bool gameisEnding = false;
+
    void Awake(){
      progressBars = GameObject.Find("ProgressBars").GetComponent<ProgressBars>();
      
@@ -54,20 +56,17 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate(){
         if(currentDate != null && currentDate.AttractionFailed()){
-            Debug.Log("Game Over");
-            SceneManager.LoadScene("GameOver");
+           if (!gameisEnding) StartCoroutine(EndGame());
         }
 
         if(currentDate != null && currentDate.AttractionSucceeded()){
-            Debug.Log("You Win");
-            SceneManager.LoadScene("WinningScreen");
+           if (!gameisEnding) StartCoroutine(WinGame());
         }
         if(progressBars.TimerHasRunOut()){
-            SceneManager.LoadScene("GameOver");
+            if (!gameisEnding) StartCoroutine(EndGame());
         }
         if(promptIndex >= currentDialogScript.prompts.Count){
-            Debug.Log("End of dialog");
-            SceneManager.LoadScene("GameOver");
+            if(!gameisEnding) StartCoroutine(EndGame());
         }
 
 
@@ -81,6 +80,16 @@ public class GameManager : MonoBehaviour
 
         //Hide cards until game start
        
+    }
+
+    private IEnumerator EndGame(){
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("GameOver");
+    }
+
+    private IEnumerator WinGame(){
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("WinningScreen");
     }
 
     public void StartGame(){
@@ -229,7 +238,15 @@ public class GameManager : MonoBehaviour
         Destroy(reaction);
     }
     public void TrashCards(){
-       
+       // call the drop down animation on the first 3 cards and flip the last two
+        //drop down the first 3 cards
+        for (int i = 0; i < 3; i++){
+            handCards[i].DropDown();
+        }
+        //reveal the last two
+        for (int i = 3; i < handCards.Length; i++){
+            handCards[i].FlipToReveal();
+        }
     }
 
     private List<AnswerModel> ShuffleCardPool(List<AnswerModel> cardPool){
