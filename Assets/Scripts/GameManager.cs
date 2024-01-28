@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     public GameObject reactionPrefab;
     public Opponent opponent;
 
+    public AudioSource laugh;
+    public AudioSource huh_x;
+
    void Awake(){
      progressBars = GameObject.Find("ProgressBars").GetComponent<ProgressBars>();
    }
@@ -189,6 +192,7 @@ public class GameManager : MonoBehaviour
 
     private async Task PositiveReaction()
     {
+        laugh.Play();
         var reaction = Instantiate(reactionPrefab, transform);
         var reactionClass = reaction.GetComponent<Reaction>();
         reactionClass.SetPositiveReaction();
@@ -197,6 +201,7 @@ public class GameManager : MonoBehaviour
     }
 
     private async Task NegativeReaction(){
+        huh_x.Play();
         var reaction = Instantiate(reactionPrefab, transform);
         var reactionClass = reaction.GetComponent<Reaction>();
         reactionClass.SetNegativeReaction();
