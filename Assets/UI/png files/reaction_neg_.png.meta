@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 1591818e677b29a4fa10d215b633b0ab
+guid: c4b517800ab05374c9bd019950b8a0f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1828525913843935813
-    second: reaction_neg_0
+      213: 2648009387035114416
+    second: reaction_neg__0
+  - first:
+      213: -1650209510001101199
+    second: reaction_neg__1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: reaction_neg_0
+      name: reaction_neg__0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 21
-        width: 491
-        height: 636
+        x: 27
+        y: 34
+        width: 477
+        height: 613
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +143,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54aa34571aa306910800000000000000
-      internalID: 1828525913843935813
+      spriteID: 0bbb02cf18e9fb420800000000000000
+      internalID: 2648009387035114416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaction_neg__1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 636
+        width: 154
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176b96f91374919e0800000000000000
+      internalID: -1650209510001101199
       vertices: []
       indices: 
       edges: []
@@ -157,7 +181,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      reaction_neg_0: 1828525913843935813
+      reaction_neg__0: 2648009387035114416
+      reaction_neg__1: -1650209510001101199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
