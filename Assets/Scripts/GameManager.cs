@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
 
         if(currentDate != null && currentDate.AttractionSucceeded()){
             Debug.Log("You Win");
-            //SceneManager.LoadScene("YouWin");
+            SceneManager.LoadScene("WinningScreen");
         }
         if(progressBars.TimerHasRunOut()){
             SceneManager.LoadScene("GameOver");
@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("End of dialog");
             SceneManager.LoadScene("GameOver");
         }
+
 
     }
 

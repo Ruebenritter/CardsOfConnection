@@ -52,6 +52,7 @@ public class Opponent : MonoBehaviour
         }
     }
 
+
     public bool AttractionSucceeded(){
         if(attractionLevel >= attractionLevelMax){
             return true;

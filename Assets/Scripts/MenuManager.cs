@@ -10,7 +10,6 @@ public class MenuManager : MonoBehaviour
     public GameObject CreditsScreen;
 
     public AudioSource clickSound;
-
     
     
     void Start()
@@ -18,13 +17,7 @@ public class MenuManager : MonoBehaviour
         StartScreen.SetActive(true);
         CreditsScreen.SetActive(false);
     }
-
     
-    void Update()
-    {
-        
-        
-    }
 
     public void StartGame(){
         clickSound.Play();
