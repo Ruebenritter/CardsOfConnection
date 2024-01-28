@@ -11,42 +11,43 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public int attractionChange;
 
     private GameObject stackAnchor;
-    private Vector3 originalPosition;
+
+    private Vector3 hoverScale;
+    private float hoverDuration = 0.3f;
+ 
+    private bool isInHand = false;
+
+    public float drawAnimDurationInSeconds = 1.4f;
+
+    //Transfrom variables
     private Vector3 hoverPosition;
     private Vector3 originalScale;
-    private Vector3 hoverScale = new Vector3(1.7f, 1.7f, 1.0f);
-    private float hoverDuration = 0.3f;
-    private Vector3 startPos;
-    private Quaternion startRot;
-    private bool isInHand = false;
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
     
-
+    private Vector3 placeInHandAnchor;
     private GameManager gameManager;
 
     public AudioSource bubbleclickSound;
 
 
+void Awake(){
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        bubbleclickSound = GetComponent<AudioSource>();
+}   
     // Start is called before the first frame update
     void Start()
     {
-        stackAnchor = GameObject.Find("StackAnchor");
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        startPos = transform.position;
-        startRot = transform.rotation;
-        selectable = true;
-
-        // Store original position and scale for resetting
-        originalPosition = transform.position;
         originalScale = transform.localScale;
-
-        // Calculate hover position slightly above the original position
-        hoverPosition = originalPosition + new Vector3(0f, 0.2f, -1f);
-    }
+        hoverScale = originalScale * 1.2f;
+        selectable = false;
+        isInHand = false;
+    }   
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void SetContent(string text, int baddieValue){
@@ -74,10 +75,10 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
         selectable = false;
     }
 
-    public void OnPointerClick (PointerEventData eventData) {
+    public async void OnPointerClick (PointerEventData eventData) {
         if (selectable){
             bubbleclickSound.Play();
-            gameManager.HandleCardClick(this);
+            await gameManager.HandleCardClick(this);
         }
     }
     public void OnPointerEnter(PointerEventData eventData)
@@ -96,30 +97,35 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
             return;
         }
         // Play exit animation
-        LeanTween.move(gameObject, originalPosition, hoverDuration).setEase(LeanTweenType.easeOutQuad);
+        LeanTween.move(gameObject, placeInHandAnchor, hoverDuration).setEase(LeanTweenType.easeOutQuad);
         LeanTween.scale(gameObject, originalScale, hoverDuration).setEase(LeanTweenType.easeOutQuad);
     }
 
     public void ResetPosition(){
-        transform.position = startPos;
-        transform.rotation = startRot;
-        selectable = true;
+        transform.position = originalPosition;
+        transform.rotation = originalRotation;
+        transform.localScale = originalScale;
+        print("reset position: " + originalPosition);
     }
 
     public void SetSelectable(bool selectable){
         this.selectable = selectable;
     }
 
-    public IEnumerator DrawFromStack(){
-        var animationDuration = 1.0f;
-        //Animate flip and flying from stack anchor to start position
-        selectable = true;
-        
-        
-        LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeOutCubic);
-        LeanTween.rotateY(gameObject, 0, animationDuration).setEase(LeanTweenType.easeOutElastic);
+    public void SetPlaceInHand(Vector3 pos){
+        placeInHandAnchor = pos;
+        print("set place in hand anchor: " + placeInHandAnchor);
+        //Set hover position sligthly above and in front of place in hand
+        hoverPosition = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z - 0.5f);
+    }
 
-        yield return new WaitForSeconds(animationDuration);
+    public IEnumerator DrawFromStack(){
+        //Animate flip and flying from stack anchor to start position
+        print("Draw moving from " + transform.position + " to " + placeInHandAnchor);
+        LeanTween.move(gameObject, placeInHandAnchor, drawAnimDurationInSeconds).setEase(LeanTweenType.easeOutCubic);
+        LeanTween.rotateY(gameObject, 0, drawAnimDurationInSeconds).setEase(LeanTweenType.easeOutElastic);
+
+        yield return new WaitForSeconds(drawAnimDurationInSeconds);
         selectable = true;
         isInHand = true;
     }
@@ -127,15 +133,15 @@ public class AnswerCard : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public IEnumerator DrawHiddenFromStack(){
         var animationDuration = 0.9f;
         //Animate flip and flying from stack anchor to start position
-        LeanTween.move(gameObject, startPos, animationDuration).setEase(LeanTweenType.easeOutSine);
+        LeanTween.move(gameObject, placeInHandAnchor, animationDuration).setEase(LeanTweenType.easeOutSine);
 
         yield return new WaitForSeconds(animationDuration);
         selectable = false;
         isInHand = true;
     }
 
-    public void PlaceOnStack(){
-        transform.position = stackAnchor.transform.position;
+    public void PlaceOnStack(UnityEngine.Vector3 stackPosition){
+        LeanTween.move(gameObject, stackPosition, 0.0f);
         LeanTween.rotateY(gameObject, 180, 0.0f);
         isInHand = false;
         selectable = false;

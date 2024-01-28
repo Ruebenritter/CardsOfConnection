@@ -24,23 +24,27 @@ public class GameManager : MonoBehaviour
     public Transform promptAnchor;
     public Transform handAnchor;
     public Transform opponentAnchor;
+    public Transform stackAnchor;
     
     private int promptIndex = 0;
     private DialogModel currentDialogScript;
     public GameObject reactionPrefab;
     public Opponent opponent;
 
+    private AnswerCard[] handCards;
+
     public AudioSource laugh;
     public AudioSource huh_x;
 
    void Awake(){
      progressBars = GameObject.Find("ProgressBars").GetComponent<ProgressBars>();
+     
    }
 
     void Start()
     {
         InitGame();
-        StartNextRound();
+        
     }
    
     void Update()
@@ -70,10 +74,17 @@ public class GameManager : MonoBehaviour
     }
 
     private void InitGame(){
-//Get opponent selection
-       
+        //Load dialog
         currentDialogScript = LoadDialog(currentDate.dateDialog);
+        //Set elements to start positions
         thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
+
+        //Hide cards until game start
+       
+    }
+
+    public void StartGame(){
+        StartNextRound();
     }
 
     private void StartNextRound(){
@@ -82,7 +93,6 @@ public class GameManager : MonoBehaviour
             return;
         }
         DisplayPrompt(currentDialogScript.prompts[promptIndex]);
-
         //Select 5 replies
         var answers = currentDialogScript.prompts[promptIndex].answers;
         DisplayHand(answers);
@@ -98,34 +108,44 @@ public class GameManager : MonoBehaviour
     }
 
     private void DisplayHand(List<AnswerModel> answers){
-       // get card children from handAnchor
-       var handCards = handAnchor.GetComponentsInChildren<AnswerCard>();
-       //set card content: later we can expect up to ten answers and randomly assign 5 but no doubles
-         //shuffle the card pool
-         var shuffledAnswers = ShuffleCardPool(answers);
+        //Shuffle cards
+        answers = ShuffleCardPool(answers);
 
-         for (int i = 0; i < handCards.Length; i++){
-                //handCards[i].ResetPosition();
-                handCards[i].PlaceOnStack();
-
-                
-                if (i >= 3){
-                    //handCards[i].FlipToBack();
-                    handCards[i].StartCoroutine(handCards[i].DrawHiddenFromStack());
-                    handCards[i].SetContent(shuffledAnswers[i].content, shuffledAnswers[i].score);
-                } else {
-                    //handCards[i].FlipToReveal();
-                    handCards[i].SetContent(shuffledAnswers[i].content, shuffledAnswers[i].score);
-                    handCards[i].StartCoroutine(handCards[i].DrawFromStack());
-                    
-                }
-         }
          //Show thought bubble
-            thoughtBubble.GetComponent<ThoughtBubble>().MoveToActivePos();
+        thoughtBubble.GetComponent<ThoughtBubble>().MoveToActivePos();
+
+        //Get cards from hand
+        handCards = handAnchor.GetComponent<HandManager>().GetCards();
+        // Show cards
+        handAnchor.GetComponent<HandManager>().ShowCards();
+        //Move cards to stack position
+        foreach (var card in handCards)
+        {
+            card.GetComponent<AnswerCard>().PlaceOnStack(stackAnchor.transform.position);
+        }
+
+        //Set card content
+        for (int i = 0; i < handCards.Length; i++)
+        {
+            handCards[i].SetContent(answers[i].content, answers[i].score);
+        }
+
+        //Draw cards from stack: 3 open, 2 hidden
+        for (int i = 0; i < handCards.Length; i++)
+        {
+           if (i < 3)
+            {
+                handCards[i].StartCoroutine(handCards[i].DrawFromStack());
+            }
+            else
+            {
+                handCards[i].StartCoroutine(handCards[i].DrawHiddenFromStack());
+            }
+        }
+
     }
 
  
-
     public DialogModel LoadDialog(TextAsset dialog){
         string json = dialog.text;
         return JsonUtility.FromJson<DialogModel>(json);
@@ -209,15 +229,7 @@ public class GameManager : MonoBehaviour
         Destroy(reaction);
     }
     public void TrashCards(){
-        //drop down the first 3 cards
-        var handCards = handAnchor.GetComponentsInChildren<AnswerCard>();
-        for (int i = 0; i < 3; i++){
-            handCards[i].DropDown();
-        }
-        //reveal the last two
-        for (int i = 3; i < handCards.Length; i++){
-            handCards[i].FlipToReveal();
-        }
+       
     }
 
     private List<AnswerModel> ShuffleCardPool(List<AnswerModel> cardPool){
