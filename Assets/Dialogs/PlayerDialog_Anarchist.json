@@ -7,65 +7,65 @@
             "answers": [
                 {
                     "content": "just fucking had it with this shit",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "seen any good movies",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "smelled the fresh spring air",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "been outside",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "visited the local the garbage dump",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "grown out your armpit hair",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "even washed yourself",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "checked out my onlyfans",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "seen any good hardcore tapes",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "been to any orgies",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "Haha, sure. That's just how it is in this bitch of a world",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "Yeah, something like that...",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "Huh? I guess...",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "Wh... what?",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "Oh. Great. So you're just another pervert... ",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -74,65 +74,65 @@
             "answers": [
                 {
                     "content": "homemade explosives",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "the song of birds in the park",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "romantic poetry",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "stamp collecting",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "foreign politics",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "the history of slavery",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "taxidermy",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "the steady decline of tradidional values",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "dead bodies",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "nazi memorabilia",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "Haha, of course! We should trade recipes some time...",
-                    "funniness_score": "2"
+                    "score": "2"
                 },
                 {
                     "content": "Hehe, well who doesn't?",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "Not really, that stuff is boring!",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "Ugh... not really. Even though I think it's important to stay in touch with the relevant political and cultural discourse in our time it's hardly appropriate for a first date you DORK",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "Ugh, are you trying to shock me? How lame...",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -141,65 +141,65 @@
             "answers": [
                 {
                     "content": "the nail bomb in my suitcase",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "a ghibli movie",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "my old hometown",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "drinking some coffee",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "my ex",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "a string of failed dates",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "smelling a stranger's socks",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "the peephole in the bathroom",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "getting black-out drunk",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "the teeth I lost here",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "N... nailbomb? That's my favourite... can I... touch it?",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "That's a nice thought.",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "Uh... yeah... I guess...",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "M.. maybe you should keep that kind of thing to yourself?",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "Just... what are you, some kind of pervert loser?",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -208,65 +208,65 @@
             "answers": [
                 {
                     "content": "like stealing a cop's gun",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "like there's a spark between us",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "warm inside",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "nice",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "hungry",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "I need a shave",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "constipated",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "desperate",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "all funny in my pants",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "like my pee-pee is coming out",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "W... would you really do it? How... exciting...",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "aaaw~",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "If you say so...",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "Really, that's all?",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "I really didn't want to hear that...",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -275,65 +275,65 @@
             "answers": [
                 {
                     "content": "focus on the task to seize the gouvernments monopoly on violence",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "take my eyes off you",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "stay awake",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "wait to go back to my gaming",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "smell my own sweat anymore",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "ignore your weird smell",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "wait to go back",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "feel my hemmorhoids anymore",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "keep my errection down",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "control my bowels",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "Re.. really? Don't worry, I will help you... If I may",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "Oh, what a nice thing to say!",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "If you say so...",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "T.. That's not the right thing to say!",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "You're disgusting! Just the worst!",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -342,65 +342,65 @@
             "answers": [
                 {
                     "content": "a lizard person, infiltrating humanity in a human disguise",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "someone cute",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "people",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "a fellow member of the human race",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "people with a special smell",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "a solid 6",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "an easy lay",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "borderline alcoholics",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "desperate, insecure people",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "dirty basement dwellers",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "My... my secret! And... you'd still take me? You're special...",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "Aaaw, what a lovely compliment!",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "Yeah, that's a thing... I guess?",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "... I don't think this is working ...",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "Just... what is wrong with you?!",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -409,65 +409,65 @@
             "answers": [
                 {
                     "content": "like it's time to do something violent",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "special",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "nice",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "servicable",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "adequate",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "pretty okay",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
-                    "content": "almost as staying home and gaming,
-                    "funniness_score": -2
+                    "content": "almost as staying home and gaming",
+                    "score": -2
                 },
                 {
                     "content": "almost as good as my last date",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "like my skeleton wants to leave my body",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "like being a puppy in a blender",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "Yes... yes it does! Let's do it together!",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "Hehe, I guess it did...",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "Uh... You're welcome I guess?",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "... U-huh ...",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "You're awful, why would you say that!?",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -476,65 +476,65 @@
             "answers": [
                 {
                     "content": "bleach and vinegar",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "I've found someone special",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "the walls are closing in",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "two legos stuck together",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "a pair of matching socks",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "poverty and crime rates",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "fat man and little boy",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "handcuffs and cheese",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "my dick in an electrical outlet",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "after this comes only death",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "Chlorine gas? What a classic, that one's my favourite!",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "I'm so glad you're honest with your feelings!",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "Uh... I'm not sure I follow...",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "Let's just... pretend you didn't say that",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "That's... not even funny!",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         },
@@ -543,65 +543,65 @@
             "answers": [
                 {
                     "content": "we burn this whole damn place to the ground",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "we do this again some time",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "we ask for the bill",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "we go smash",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "you try to look a little prettier next time",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "you leave so I can drink in peace",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "you pay our bill now",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "we take a shit together",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "you help me work on my gag reflex",
-                    "funniness_score": -2
+                    "score": -2
                 },
                 {
                     "content": "pick through the garbage out back later",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ],
             "reactions": [
                 {
                     "content": "Yeah, fuck this place! Let's start a fire! Wooooo~",
-                    "funniness_score": 2
+                    "score": 2
                 },
                 {
                     "content": "Oh sure, that sounds nice!",
-                    "funniness_score": 1
+                    "score": 1
                 },
                 {
                     "content": "Eh... I'd rather just leave to be honest",
-                    "funniness_score": 0
+                    "score": 0
                 },
                 {
                     "content": "Ugh, you're so rude! Just the worst!",
-                    "funniness_score": -1
+                    "score": -1
                 },
                 {
                     "content": "You know what... how about I leave and YOU pay?",
-                    "funniness_score": -2
+                    "score": -2
                 }
             ]
         }

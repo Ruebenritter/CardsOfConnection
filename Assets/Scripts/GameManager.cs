@@ -83,13 +83,16 @@ public class GameManager : MonoBehaviour
     }
 
     private IEnumerator EndGame(){
+        gameisEnding = true;
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("GameOver");
+        
     }
 
     private IEnumerator WinGame(){
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("WinningScreen");
+        gameisEnding = true;
     }
 
     public void StartGame(){
