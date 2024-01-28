@@ -763,7 +763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'MUSIC & SOUNDS: DILARA'
+  m_text: 'MUSIC & SOUND: DILARA'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa2020098b30784b9c7b780e45116cb, type: 2}
   m_sharedMaterial: {fileID: -1450203382110507592, guid: 7aa2020098b30784b9c7b780e45116cb, type: 2}
@@ -1437,7 +1437,7 @@ RectTransform:
   m_GameObject: {fileID: 1192017330}
   m_LocalRotation: {x: 0, y: 0, z: 0.056692794, w: 0.99839175}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.5}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1683926332}
@@ -1445,7 +1445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 255}
+  m_AnchoredPosition: {x: 70, y: 200}
   m_SizeDelta: {x: 800, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1192017332
@@ -1498,7 +1498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828a439a7fb1d00499d6e4b8c17ee21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverScale: {x: 0.9, y: 0.9, z: 1}
+  hoverScale: {x: 1, y: 1, z: 1}
 --- !u!1001 &1297753528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1875,7 +1875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'ARTS: MYUSOME'
+  m_text: 'ART: MYUSOME'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa2020098b30784b9c7b780e45116cb, type: 2}
   m_sharedMaterial: {fileID: -1450203382110507592, guid: 7aa2020098b30784b9c7b780e45116cb, type: 2}

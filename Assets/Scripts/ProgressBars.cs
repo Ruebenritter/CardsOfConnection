@@ -45,7 +45,7 @@ public class ProgressBars : MonoBehaviour
             attractionBarLevel.size -= transitionSpeed;
         }
 
-        stressBarLevel.size -= Time.deltaTime * 0.005f;
+        stressBarLevel.size -= Time.deltaTime * 0.0025f;
         if(stressBarLevel.size < 0.15f){
             if(!timerunsout.isPlaying){
                 timerunsout.Play();

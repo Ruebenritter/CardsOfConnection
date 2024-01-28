@@ -229,8 +229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.2}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 180}
-  m_SizeDelta: {x: 477.0938, y: 95.0976}
+  m_AnchoredPosition: {x: 30, y: 170}
+  m_SizeDelta: {x: 586.4196, y: 124.115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101137528
 MonoBehaviour:
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '... and they lived happily ever after...
+  m_text: '"What? You two hit it off? GREAT. I knew you could do it!"
 
 '
   m_isRightToLeft: 0
