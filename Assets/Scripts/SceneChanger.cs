@@ -7,8 +7,15 @@ public class SceneChanger : MonoBehaviour
 {
     public AudioSource clickSound;
 
+    void Start(){
+        if(SceneManager.GetActiveScene().name != "WelcomeScreen" & SceneManager.GetActiveScene().name != "GameOver" & SceneManager.GetActiveScene().name != "WinningScreen"){
+            clickSound.Play();
+        }
+        
+    }
+
     public void ChangeScene(string sceneName){
-        clickSound.Play();
+        //clickSound.Play();
         SceneManager.LoadScene(sceneName);
     }
 

@@ -76,7 +76,8 @@ public class GameManager : MonoBehaviour
         //Load dialog
         currentDialogScript = LoadDialog(currentDate.dateDialog);
         //Set elements to start positions
-        thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
+        //thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
+        thoughtBubble.SetActive(false);
 
         //Hide cards until game start
        
@@ -124,7 +125,8 @@ public class GameManager : MonoBehaviour
         answers = ShuffleCardPool(answers);
 
          //Show thought bubble
-        thoughtBubble.GetComponent<ThoughtBubble>().MoveToActivePos();
+        //thoughtBubble.GetComponent<ThoughtBubble>().MoveToActivePos();
+        thoughtBubble.SetActive(true);
 
         //Get cards from hand
         handCards = handAnchor.GetComponent<HandManager>().GetCards();
@@ -167,7 +169,8 @@ public class GameManager : MonoBehaviour
     public async Task HandleCardClick(AnswerCard card)
     {
         // hide thought bubble
-        thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
+        //thoughtBubble.GetComponent<ThoughtBubble>().MoveToRestingPos();
+        thoughtBubble.SetActive(false);
         card.SetSelectable(false);
         // dropdown all other cards
         var handCards = handAnchor.GetComponentsInChildren<AnswerCard>();
@@ -185,14 +188,22 @@ public class GameManager : MonoBehaviour
         if (card.attractionChange == 2)
         {
             // play positive reaction coroutine
-            var positiveReactionTask = PositiveReaction();
-            await positiveReactionTask;
+            //original code:
+            //var positiveReactionTask = PositiveReaction();
+            //await positiveReactionTask;
+            
+            var pos_react = StartCoroutine(PositiveReaction());
+            
         }
         else if (card.attractionChange == -2)
         {
             // play negative reaction coroutine
-            var negativeReactionTask = NegativeReaction();
-            await negativeReactionTask;
+            //original code:
+            //var negativeReactionTask = NegativeReaction();
+            //await negativeReactionTask;
+
+            var neg_react =StartCoroutine(NegativeReaction());
+            
         }
 
         // hide promptGo
@@ -210,6 +221,8 @@ public class GameManager : MonoBehaviour
         promptGO.SetActive(true);
         promptIndex++;
         StartNextRound();
+        
+        
     }
 
     private ReplyModel GetReplyForScore(int score){
@@ -222,6 +235,29 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
+    private IEnumerator PositiveReaction(){
+        laugh.Play();
+        var reaction = Instantiate(reactionPrefab, transform);
+        var reactionClass = reaction.GetComponent<Reaction>();
+        reactionClass.SetPositiveReaction();
+        yield return new WaitForSeconds(1.5f);
+        Destroy(reaction);
+        
+    }
+
+    private IEnumerator NegativeReaction(){
+        huh_x.Play();
+        var reaction = Instantiate(reactionPrefab, transform);
+        var reactionClass = reaction.GetComponent<Reaction>();
+        reactionClass.SetNegativeReaction();
+        yield return new WaitForSeconds(1.5f);
+        Destroy(reaction);
+        
+    }
+
+
+    /*
+    //Oroginal functions:
     private async Task PositiveReaction()
     {
         laugh.Play();
@@ -240,6 +276,10 @@ public class GameManager : MonoBehaviour
         await Task.Delay(2000);
         Destroy(reaction);
     }
+    */
+
+
+
     public void TrashCards(){
        // call the drop down animation on the first 3 cards and flip the last two
         //drop down the first 3 cards
