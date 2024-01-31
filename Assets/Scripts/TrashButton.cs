@@ -73,7 +73,7 @@ public class TrashButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     }
 
     public void OnPointerClick (PointerEventData eventData) {
-        trashBinSound.volume = 0.4f;
+        trashBinSound.volume = 0.3f;
         trashBinSound.Play();
         TrashInfoText.SetActive(false);
         thoughBubble.SetActive(thoughBubbleOnEnterActive);

@@ -235,6 +235,7 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
+    
     private IEnumerator PositiveReaction(){
         laugh.Play();
         var reaction = Instantiate(reactionPrefab, transform);
@@ -254,10 +255,11 @@ public class GameManager : MonoBehaviour
         Destroy(reaction);
         
     }
+    
 
 
     /*
-    //Oroginal functions:
+    //Original functions:
     private async Task PositiveReaction()
     {
         laugh.Play();
@@ -277,6 +279,7 @@ public class GameManager : MonoBehaviour
         Destroy(reaction);
     }
     */
+    
 
 
 
