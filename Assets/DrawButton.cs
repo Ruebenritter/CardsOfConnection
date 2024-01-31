@@ -8,6 +8,7 @@ public class DrawButton : MonoBehaviour, IPointerClickHandler
     Vector3 startPos = new Vector3(0, -4, -3);
     Vector3 hiddenPos = new Vector3(0, -10, -3);
     private GameManager gameManager;
+    public GameObject TrashBinInfoText;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class DrawButton : MonoBehaviour, IPointerClickHandler
             gameManager.StartGame();
         }
         MoveToInactivePos();
+        TrashBinInfoText.SetActive(false);
     }
 
     private void MoveToActivePos(){
